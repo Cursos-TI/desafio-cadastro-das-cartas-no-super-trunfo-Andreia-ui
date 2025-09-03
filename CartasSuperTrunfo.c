@@ -8,17 +8,49 @@
 //Teste larissa
 
 int main() {
-    printf("desafioCartasSuperTrunfos!/n");
-    // Sugestão: Defina variáveis separadas para cada atributo da cidade.
-    // Exemplos de atributos: código da cidade, nome, população, área, PIB, número de pontos turísticos.
-    
-    // Cadastro das Cartas:
-    // Sugestão: Utilize a função scanf para capturar as entradas do usuário para cada atributo.
-    // Solicite ao usuário que insira as informações de cada cidade, como o código, nome, população, área, etc.
-    
-    // Exibição dos Dados das Cartas:
-    // Sugestão: Utilize a função printf para exibir as informações das cartas cadastradas de forma clara e organizada.
-    // Exiba os valores inseridos para cada atributo da cidade, um por linha.
+  char estado1[50];
+    char codigo1[3];
+    char nomeCidade1[50];
+    int populacao1;
+    float area1;
+    float pib1;
+    int pontosTuristicos1;
+
+    // Entrada de dados
+    printf("Digite o estado da Carta 1 (A-H):\n ");
+    scanf(" %s", &estado1);
+
+    printf("Digite o código da Carta 1 (ex: A01):\n ");
+    scanf("%3s", codigo1);  
+
+    printf("Digite o nome da cidade da Carta 1:\n");
+    scanf("%s", nomeCidade1);
+
+    printf("Digite a população da Carta 1:\n");
+    scanf("%d", &populacao1);
+
+    printf("Digite a área da Carta 1 (em km²):");
+    scanf("%f", &area1);
+
+    printf("Digite o PIB da Carta 1:");
+    scanf("%f", &pib1);
+
+    printf("Digite o número de pontos turísticos da Carta 1:\n");
+    scanf("%d", &pontosTuristicos1);
+
+    // Exibição dos dados
+    printf("estado: %s, \n", estado1);
+    printf("Codigo:%s, \n", codigo1);
+    printf("População:%d, \n", populacao1);
+     while (getchar() != '\n');
+    printf("area: %f km², \n", area1);
+    while (getchar() != '\n');
+    printf("PIB:  %.2f, \n", pib1);
+    while (getchar() != '\n');
+    printf("Pontos Turisticos:  %d, \n", pontosTuristicos1);
+     while (getchar() != '\n');
 
     return 0;
-}
+}   
+    
+   
