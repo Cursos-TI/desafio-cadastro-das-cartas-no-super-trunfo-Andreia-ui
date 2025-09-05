@@ -11,6 +11,7 @@ struct Carta {
 };
 
     int main() {
+      printf("novo comit\n");
       printf("Desafio CartasSuperTrunfo!\n");
       // Declaração das duas cartas
     struct Carta carta1;
